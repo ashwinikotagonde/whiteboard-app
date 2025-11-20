@@ -1,13 +1,13 @@
-# ✏️ Whiteboard App — Real-Time Collaborative Drawing (React + TypeScript)
+#  Whiteboard App — Real-Time Collaborative Drawing (React + TypeScript)
 
 A modern real-time collaborative whiteboard built using **React**, **TypeScript**, **Socket.IO**, and **Bootstrap 5**.  
 This app allows multiple users to draw together live, chat, upload images for AI predictions, export drawings, and collaborate smoothly with cursor sharing.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🎨 Whiteboard Tools
+###  Whiteboard Tools
 - Freehand drawing with smooth strokes  
 - Brush color picker  
 - Brush size control  
@@ -19,7 +19,7 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-### 🔄 Real-Time Collaboration
+###  Real-Time Collaboration
 - Multiple users draw together in real time  
 - Real-time stroke syncing using Socket.IO  
 - Live user cursors with name labels  
@@ -28,7 +28,7 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-### 📷 AI Image Prediction
+###  AI Image Prediction
 - Upload any image  
 - Uses MobileNet model to detect objects  
 - Shows prediction results  
@@ -37,7 +37,7 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-### 💬 Live Chat
+###  Live Chat
 - Built-in real-time messaging  
 - Auto-scroll to newest messages  
 - Clean, mobile-friendly chat UI  
@@ -45,7 +45,7 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-### 📱 Fully Responsive UI
+###  Fully Responsive UI
 - Mobile-friendly whiteboard layout  
 - Toolbar wraps nicely on small screens  
 - Session layout uses Bootstrap grid  
@@ -54,7 +54,7 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### **Frontend**
 - React + TypeScript  
@@ -73,5 +73,5 @@ This app allows multiple users to draw together live, chat, upload images for AI
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
