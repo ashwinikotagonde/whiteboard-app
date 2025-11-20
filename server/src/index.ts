@@ -84,6 +84,16 @@ io.on("connection", (socket) => {
       socket.to(sessionId).emit("user-left", { socketId: socket.id });
     }
   });
+
+  socket.on("chat-message", (sessionId: string, msg) => {
+  socket.to(sessionId).emit("chat-message", msg);
+});
+
+socket.on("cursor-move", (sessionId: string, data) => {
+  socket.to(sessionId).emit("cursor-move", data);
+});
+
+
 });
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 5000;
