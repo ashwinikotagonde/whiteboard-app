@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# ✏️ Whiteboard App — Real-Time Collaborative Drawing (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern real-time collaborative whiteboard built using **React**, **TypeScript**, **Socket.IO**, and **Bootstrap 5**.  
+This app allows multiple users to draw together live, chat, upload images for AI predictions, export drawings, and collaborate smoothly with cursor sharing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 🎨 Whiteboard Tools
+- Freehand drawing with smooth strokes  
+- Brush color picker  
+- Brush size control  
+- Eraser tool  
+- Undo / Redo  
+- Clear board  
+- Export as **PNG**  
+- Export as **PDF**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🔄 Real-Time Collaboration
+- Multiple users draw together in real time  
+- Real-time stroke syncing using Socket.IO  
+- Live user cursors with name labels  
+- Cursor color sync  
+- Redo/Undo sync with others  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📷 AI Image Prediction
+- Upload any image  
+- Uses MobileNet model to detect objects  
+- Shows prediction results  
+- Clean UI sidebar for AI tools  
+- Works fully on client-side (no backend ML required)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 💬 Live Chat
+- Built-in real-time messaging  
+- Auto-scroll to newest messages  
+- Clean, mobile-friendly chat UI  
+- Real-time multi-user communication  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 📱 Fully Responsive UI
+- Mobile-friendly whiteboard layout  
+- Toolbar wraps nicely on small screens  
+- Session layout uses Bootstrap grid  
+- Chat + AI sidebar move below whiteboard in mobile  
+- Clean & professional design  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- React + TypeScript  
+- Vite  
+- Bootstrap 5  
+- Konva.js (Canvas library)  
+- TensorFlow.js  
+- MobileNet ML model  
+- Socket.IO client  
+
+### **Backend**
+- Node.js  
+- Express.js  
+- Socket.IO server  
+- TypeScript  
+
+---
+
+## 📂 Project Structure
+
